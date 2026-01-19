@@ -27,9 +27,11 @@ fastify-starter/
 └─ .gitignore
 
 ### 启动服务后，访问接口
+
 **获取首页**; GET http://localhost:3000/
 
 **登录获取 Token**
+
 ```
 POST http://localhost:3000/auth/login
 Content-Type: application/json
@@ -41,6 +43,7 @@ Content-Type: application/json
 ```
 
 **访问受保护的接口**
+
 ```
 // 1. 登录获取token
 fetch('http://localhost:3000/auth/login', {
